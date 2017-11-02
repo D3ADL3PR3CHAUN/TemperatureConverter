@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mcgee.temperatureconverter.MainActivity">
+
+    <TextView
+        android:id="@+id/degreesLabel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/degrees_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="142dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/fahrenheitLabel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fahrenheit_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/degreesLabel" />
+
+    <TextView
+        android:id="@+id/celsiusLabel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/celsius_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/fahrenheitLabel"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/celsiusConvertedLabel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/celsius_tv"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/celsiusLabel"
+        app:layout_constraintTop_toBottomOf="@+id/fahrenheitET" />
+
+    <EditText
+        android:id="@+id/fahrenheitET"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/fahrenheitLabel"
+        app:layout_constraintTop_toBottomOf="@+id/degreesLabel" />
+
+</android.support.constraint.ConstraintLayout>
